@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="titulo">MILO STORE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #070606; 
+      text-align: center;
+    }
+    .dos{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .titulo{
+        color: fuchsia;
+    }
+
+    header {
+      padding: 40px 20px;
+      background-color: #c60b9b;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .producto {
+      background: #deabde;
+      border: 2px solid fuchsia;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+   
+
+    .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff69b4; /* Color rosa */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MILO STORE</h1>
+    <p class="dos">CONTACTO: 1168223001</p>
+  </header>
+
+  <section class="productos">
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="./img/Captura de pantalla 2025-08-27 175424.png" alt="Vestido Elegante">
+      <h3>Corset importado</h3>
+      <p>$49990</p>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="./img/Captura de pantalla 2025-08-27 175453.png" alt="Top Urbano">
+      <h3>Corbata</h3>
+      <p>$15.000</p>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="./img/Captura de pantalla 2025-08-27 175509.png" alt="Pantalón Jeans">
+      <h3>Top Lucia</h3>
+      <p>$18000</p>
+    </div>
+  </section>
+
+  <!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/5491168223001" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
